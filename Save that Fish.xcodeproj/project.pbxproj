@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F61229D31B870D14001111D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61229D21B870D14001111D3 /* AppDelegate.swift */; };
+		F61229D51B870D14001111D3 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F61229D41B870D14001111D3 /* GameScene.sks */; };
+		F61229D71B870D14001111D3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61229D61B870D14001111D3 /* GameScene.swift */; };
+		F61229D91B870D14001111D3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61229D81B870D14001111D3 /* GameViewController.swift */; };
+		F61229DC1B870D15001111D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F61229DA1B870D15001111D3 /* Main.storyboard */; };
+		F61229DE1B870D15001111D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F61229DD1B870D15001111D3 /* Images.xcassets */; };
+		F61229E11B870D15001111D3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F61229DF1B870D15001111D3 /* LaunchScreen.xib */; };
+		F61229ED1B870D15001111D3 /* Save_that_FishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61229EC1B870D15001111D3 /* Save_that_FishTests.swift */; };
+		F68078CD1BA370C600FFCB3F /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68078CC1BA370C600FFCB3F /* GoogleMobileAds.framework */; };
+		F68078CF1BA370CF00FFCB3F /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68078CE1BA370CF00FFCB3F /* AdSupport.framework */; };
+		F68078D11BA370E000FFCB3F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68078D01BA370E000FFCB3F /* AudioToolbox.framework */; };
+		F68078D31BA370E600FFCB3F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68078D21BA370E600FFCB3F /* AVFoundation.framework */; };
+		F68078D51BA370EC00FFCB3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68078D41BA370EC00FFCB3F /* CoreGraphics.framework */; };
+		F68078D71BA370F100FFCB3F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68078D61BA370F100FFCB3F /* CoreTelephony.framework */; };
+		F68078DA1BA370F800FFCB3F /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68078D81BA370F800FFCB3F /* EventKit.framework */; };
+		F68078DB1BA370F800FFCB3F /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68078D91BA370F800FFCB3F /* EventKitUI.framework */; };
+		F68078DD1BA3711300FFCB3F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68078DC1BA3711300FFCB3F /* MessageUI.framework */; };
+		F68078DF1BA3711900FFCB3F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68078DE1BA3711900FFCB3F /* StoreKit.framework */; };
+		F68078E11BA3712400FFCB3F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68078E01BA3712400FFCB3F /* SystemConfiguration.framework */; };
+		F68078E31BA435A100FFCB3F /* HowToPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68078E21BA435A100FFCB3F /* HowToPlayViewController.swift */; };
+		F68078E61BA4360200FFCB3F /* HowToPlayScreen1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68078E41BA4360200FFCB3F /* HowToPlayScreen1ViewController.swift */; };
+		F68078E71BA4360200FFCB3F /* HowToPlayScreen1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68078E51BA4360200FFCB3F /* HowToPlayScreen1ViewController.xib */; };
+		F68078EA1BA4361500FFCB3F /* HowToPlayScreen2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68078E81BA4361500FFCB3F /* HowToPlayScreen2ViewController.swift */; };
+		F68078EB1BA4361500FFCB3F /* HowToPlayScreen2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68078E91BA4361500FFCB3F /* HowToPlayScreen2ViewController.xib */; };
+		F68078EE1BA4362700FFCB3F /* HowToPlayScreen3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68078EC1BA4362700FFCB3F /* HowToPlayScreen3ViewController.swift */; };
+		F68078EF1BA4362700FFCB3F /* HowToPlayScreen3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68078ED1BA4362700FFCB3F /* HowToPlayScreen3ViewController.xib */; };
+		F68078F21BA4363A00FFCB3F /* HowToPlayScreen4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68078F01BA4363A00FFCB3F /* HowToPlayScreen4ViewController.swift */; };
+		F68078F31BA4363A00FFCB3F /* HowToPlayScreen4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68078F11BA4363A00FFCB3F /* HowToPlayScreen4ViewController.xib */; };
+		F6BC67351B975C2E00CA9CC5 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC67341B975C2E00CA9CC5 /* ShopViewController.swift */; };
+		F6F9CE071B9C73F900F49982 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F9CE061B9C73F900F49982 /* IntroViewController.swift */; };
+		F6F9CE091B9CB2AB00F49982 /* DS-DIGII.TTF in Resources */ = {isa = PBXBuildFile; fileRef = F6F9CE081B9CB15A00F49982 /* DS-DIGII.TTF */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F61229E71B870D15001111D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F61229C51B870D13001111D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F61229CC1B870D14001111D3;
+			remoteInfo = "Save that Fish";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F61229CD1B870D14001111D3 /* Save that Fish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Save that Fish.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F61229D11B870D14001111D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F61229D21B870D14001111D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F61229D41B870D14001111D3 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		F61229D61B870D14001111D3 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		F61229D81B870D14001111D3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		F61229DB1B870D15001111D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F61229DD1B870D15001111D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F61229E01B870D15001111D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F61229E61B870D15001111D3 /* Save that FishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Save that FishTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F61229EB1B870D15001111D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F61229EC1B870D15001111D3 /* Save_that_FishTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Save_that_FishTests.swift; sourceTree = "<group>"; };
+		F68078CC1BA370C600FFCB3F /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../../../Downloads/GoogleMobileAdsSdkiOS-7.4.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		F68078CE1BA370CF00FFCB3F /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		F68078D01BA370E000FFCB3F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F68078D21BA370E600FFCB3F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F68078D41BA370EC00FFCB3F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F68078D61BA370F100FFCB3F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F68078D81BA370F800FFCB3F /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		F68078D91BA370F800FFCB3F /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		F68078DC1BA3711300FFCB3F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		F68078DE1BA3711900FFCB3F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F68078E01BA3712400FFCB3F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F68078E21BA435A100FFCB3F /* HowToPlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToPlayViewController.swift; sourceTree = "<group>"; };
+		F68078E41BA4360200FFCB3F /* HowToPlayScreen1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToPlayScreen1ViewController.swift; sourceTree = "<group>"; };
+		F68078E51BA4360200FFCB3F /* HowToPlayScreen1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HowToPlayScreen1ViewController.xib; sourceTree = "<group>"; };
+		F68078E81BA4361500FFCB3F /* HowToPlayScreen2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToPlayScreen2ViewController.swift; sourceTree = "<group>"; };
+		F68078E91BA4361500FFCB3F /* HowToPlayScreen2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HowToPlayScreen2ViewController.xib; sourceTree = "<group>"; };
+		F68078EC1BA4362700FFCB3F /* HowToPlayScreen3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToPlayScreen3ViewController.swift; sourceTree = "<group>"; };
+		F68078ED1BA4362700FFCB3F /* HowToPlayScreen3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HowToPlayScreen3ViewController.xib; sourceTree = "<group>"; };
+		F68078F01BA4363A00FFCB3F /* HowToPlayScreen4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToPlayScreen4ViewController.swift; sourceTree = "<group>"; };
+		F68078F11BA4363A00FFCB3F /* HowToPlayScreen4ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HowToPlayScreen4ViewController.xib; sourceTree = "<group>"; };
+		F6BC67341B975C2E00CA9CC5 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		F6F9CE061B9C73F900F49982 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		F6F9CE081B9CB15A00F49982 /* DS-DIGII.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGII.TTF"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F61229CA1B870D14001111D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68078E11BA3712400FFCB3F /* SystemConfiguration.framework in Frameworks */,
+				F68078DF1BA3711900FFCB3F /* StoreKit.framework in Frameworks */,
+				F68078DD1BA3711300FFCB3F /* MessageUI.framework in Frameworks */,
+				F68078DA1BA370F800FFCB3F /* EventKit.framework in Frameworks */,
+				F68078DB1BA370F800FFCB3F /* EventKitUI.framework in Frameworks */,
+				F68078D71BA370F100FFCB3F /* CoreTelephony.framework in Frameworks */,
+				F68078D51BA370EC00FFCB3F /* CoreGraphics.framework in Frameworks */,
+				F68078D31BA370E600FFCB3F /* AVFoundation.framework in Frameworks */,
+				F68078D11BA370E000FFCB3F /* AudioToolbox.framework in Frameworks */,
+				F68078CF1BA370CF00FFCB3F /* AdSupport.framework in Frameworks */,
+				F68078CD1BA370C600FFCB3F /* GoogleMobileAds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F61229E31B870D15001111D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F61229C41B870D13001111D3 = {
+			isa = PBXGroup;
+			children = (
+				F68078E01BA3712400FFCB3F /* SystemConfiguration.framework */,
+				F68078DE1BA3711900FFCB3F /* StoreKit.framework */,
+				F68078DC1BA3711300FFCB3F /* MessageUI.framework */,
+				F68078D81BA370F800FFCB3F /* EventKit.framework */,
+				F68078D91BA370F800FFCB3F /* EventKitUI.framework */,
+				F68078D61BA370F100FFCB3F /* CoreTelephony.framework */,
+				F68078D41BA370EC00FFCB3F /* CoreGraphics.framework */,
+				F68078D21BA370E600FFCB3F /* AVFoundation.framework */,
+				F68078D01BA370E000FFCB3F /* AudioToolbox.framework */,
+				F68078CE1BA370CF00FFCB3F /* AdSupport.framework */,
+				F68078CC1BA370C600FFCB3F /* GoogleMobileAds.framework */,
+				F61229CF1B870D14001111D3 /* Save that Fish */,
+				F61229E91B870D15001111D3 /* Save that FishTests */,
+				F61229CE1B870D14001111D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F61229CE1B870D14001111D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F61229CD1B870D14001111D3 /* Save that Fish.app */,
+				F61229E61B870D15001111D3 /* Save that FishTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F61229CF1B870D14001111D3 /* Save that Fish */ = {
+			isa = PBXGroup;
+			children = (
+				F61229D21B870D14001111D3 /* AppDelegate.swift */,
+				F61229D41B870D14001111D3 /* GameScene.sks */,
+				F61229D61B870D14001111D3 /* GameScene.swift */,
+				F61229D81B870D14001111D3 /* GameViewController.swift */,
+				F6BC67341B975C2E00CA9CC5 /* ShopViewController.swift */,
+				F6F9CE061B9C73F900F49982 /* IntroViewController.swift */,
+				F68078E21BA435A100FFCB3F /* HowToPlayViewController.swift */,
+				F68078E41BA4360200FFCB3F /* HowToPlayScreen1ViewController.swift */,
+				F68078E81BA4361500FFCB3F /* HowToPlayScreen2ViewController.swift */,
+				F68078EC1BA4362700FFCB3F /* HowToPlayScreen3ViewController.swift */,
+				F68078F01BA4363A00FFCB3F /* HowToPlayScreen4ViewController.swift */,
+				F68078F11BA4363A00FFCB3F /* HowToPlayScreen4ViewController.xib */,
+				F68078ED1BA4362700FFCB3F /* HowToPlayScreen3ViewController.xib */,
+				F68078E91BA4361500FFCB3F /* HowToPlayScreen2ViewController.xib */,
+				F68078E51BA4360200FFCB3F /* HowToPlayScreen1ViewController.xib */,
+				F61229DA1B870D15001111D3 /* Main.storyboard */,
+				F61229DD1B870D15001111D3 /* Images.xcassets */,
+				F61229DF1B870D15001111D3 /* LaunchScreen.xib */,
+				F61229D01B870D14001111D3 /* Supporting Files */,
+			);
+			path = "Save that Fish";
+			sourceTree = "<group>";
+		};
+		F61229D01B870D14001111D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6F9CE081B9CB15A00F49982 /* DS-DIGII.TTF */,
+				F61229D11B870D14001111D3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F61229E91B870D15001111D3 /* Save that FishTests */ = {
+			isa = PBXGroup;
+			children = (
+				F61229EC1B870D15001111D3 /* Save_that_FishTests.swift */,
+				F61229EA1B870D15001111D3 /* Supporting Files */,
+			);
+			path = "Save that FishTests";
+			sourceTree = "<group>";
+		};
+		F61229EA1B870D15001111D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F61229EB1B870D15001111D3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F61229CC1B870D14001111D3 /* Save that Fish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F61229F01B870D15001111D3 /* Build configuration list for PBXNativeTarget "Save that Fish" */;
+			buildPhases = (
+				F61229C91B870D14001111D3 /* Sources */,
+				F61229CA1B870D14001111D3 /* Frameworks */,
+				F61229CB1B870D14001111D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Save that Fish";
+			productName = "Save that Fish";
+			productReference = F61229CD1B870D14001111D3 /* Save that Fish.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F61229E51B870D15001111D3 /* Save that FishTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F61229F31B870D15001111D3 /* Build configuration list for PBXNativeTarget "Save that FishTests" */;
+			buildPhases = (
+				F61229E21B870D15001111D3 /* Sources */,
+				F61229E31B870D15001111D3 /* Frameworks */,
+				F61229E41B870D15001111D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F61229E81B870D15001111D3 /* PBXTargetDependency */,
+			);
+			name = "Save that FishTests";
+			productName = "Save that FishTests";
+			productReference = F61229E61B870D15001111D3 /* Save that FishTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F61229C51B870D13001111D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = oisinnolan;
+				TargetAttributes = {
+					F61229CC1B870D14001111D3 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					F61229E51B870D15001111D3 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = F61229CC1B870D14001111D3;
+					};
+				};
+			};
+			buildConfigurationList = F61229C81B870D13001111D3 /* Build configuration list for PBXProject "Save that Fish" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F61229C41B870D13001111D3;
+			productRefGroup = F61229CE1B870D14001111D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F61229CC1B870D14001111D3 /* Save that Fish */,
+				F61229E51B870D15001111D3 /* Save that FishTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F61229CB1B870D14001111D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68078E71BA4360200FFCB3F /* HowToPlayScreen1ViewController.xib in Resources */,
+				F6F9CE091B9CB2AB00F49982 /* DS-DIGII.TTF in Resources */,
+				F68078F31BA4363A00FFCB3F /* HowToPlayScreen4ViewController.xib in Resources */,
+				F61229E11B870D15001111D3 /* LaunchScreen.xib in Resources */,
+				F68078EB1BA4361500FFCB3F /* HowToPlayScreen2ViewController.xib in Resources */,
+				F61229DE1B870D15001111D3 /* Images.xcassets in Resources */,
+				F68078EF1BA4362700FFCB3F /* HowToPlayScreen3ViewController.xib in Resources */,
+				F61229D51B870D14001111D3 /* GameScene.sks in Resources */,
+				F61229DC1B870D15001111D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F61229E41B870D15001111D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F61229C91B870D14001111D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6F9CE071B9C73F900F49982 /* IntroViewController.swift in Sources */,
+				F6BC67351B975C2E00CA9CC5 /* ShopViewController.swift in Sources */,
+				F68078E31BA435A100FFCB3F /* HowToPlayViewController.swift in Sources */,
+				F68078F21BA4363A00FFCB3F /* HowToPlayScreen4ViewController.swift in Sources */,
+				F68078EE1BA4362700FFCB3F /* HowToPlayScreen3ViewController.swift in Sources */,
+				F61229D71B870D14001111D3 /* GameScene.swift in Sources */,
+				F61229D91B870D14001111D3 /* GameViewController.swift in Sources */,
+				F61229D31B870D14001111D3 /* AppDelegate.swift in Sources */,
+				F68078E61BA4360200FFCB3F /* HowToPlayScreen1ViewController.swift in Sources */,
+				F68078EA1BA4361500FFCB3F /* HowToPlayScreen2ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F61229E21B870D15001111D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F61229ED1B870D15001111D3 /* Save_that_FishTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F61229E81B870D15001111D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F61229CC1B870D14001111D3 /* Save that Fish */;
+			targetProxy = F61229E71B870D15001111D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F61229DA1B870D15001111D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F61229DB1B870D15001111D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F61229DF1B870D15001111D3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F61229E01B870D15001111D3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F61229EE1B870D15001111D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F61229EF1B870D15001111D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F61229F11B870D15001111D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/nualaodea/Downloads/GoogleMobileAdsSdkiOS-7.4.0",
+				);
+				INFOPLIST_FILE = "Save that Fish/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F61229F21B870D15001111D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/nualaodea/Downloads/GoogleMobileAdsSdkiOS-7.4.0",
+				);
+				INFOPLIST_FILE = "Save that Fish/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F61229F41B870D15001111D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Save that FishTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Save that Fish.app/Save that Fish";
+			};
+			name = Debug;
+		};
+		F61229F51B870D15001111D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Save that FishTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Save that Fish.app/Save that Fish";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F61229C81B870D13001111D3 /* Build configuration list for PBXProject "Save that Fish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F61229EE1B870D15001111D3 /* Debug */,
+				F61229EF1B870D15001111D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F61229F01B870D15001111D3 /* Build configuration list for PBXNativeTarget "Save that Fish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F61229F11B870D15001111D3 /* Debug */,
+				F61229F21B870D15001111D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F61229F31B870D15001111D3 /* Build configuration list for PBXNativeTarget "Save that FishTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F61229F41B870D15001111D3 /* Debug */,
+				F61229F51B870D15001111D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F61229C51B870D13001111D3 /* Project object */;
+}

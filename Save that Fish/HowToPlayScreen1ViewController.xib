@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HowToPlayScreen1ViewController" customModule="Save_that_Fish" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="howToPlayScreen1" translatesAutoresizingMaskIntoConstraints="NO" id="Ees-5F-YLc">
+                    <rect key="frame" x="0.0" y="8" width="320" height="317"/>
+                </imageView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Gm4-F2-SdO">
+                    <rect key="frame" x="0.0" y="362" width="320" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="uzQ-fE-AVY"/>
+                    </constraints>
+                    <color key="pageIndicatorTintColor" red="0.0078431372550000003" green="0.18823529410000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.066666666669999999" green="0.55294117649999996" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ees-5F-YLc" secondAttribute="trailing" id="6eH-a8-BuZ"/>
+                <constraint firstItem="Ees-5F-YLc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="8fD-fV-Mra"/>
+                <constraint firstItem="Gm4-F2-SdO" firstAttribute="leading" secondItem="Ees-5F-YLc" secondAttribute="leading" id="C1z-lS-ZrI"/>
+                <constraint firstItem="Gm4-F2-SdO" firstAttribute="top" secondItem="Ees-5F-YLc" secondAttribute="bottom" constant="37" id="CoR-4p-15z"/>
+                <constraint firstItem="Ees-5F-YLc" firstAttribute="trailing" secondItem="Gm4-F2-SdO" secondAttribute="trailing" id="lQY-eh-bMe"/>
+                <constraint firstItem="Gm4-F2-SdO" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottomMargin" constant="-73" id="pXv-p3-ZO5"/>
+                <constraint firstItem="Ees-5F-YLc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qO3-nI-07x"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="howToPlayScreen1" width="640" height="800"/>
+    </resources>
+</document>
